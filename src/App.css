@@ -1,0 +1,303 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background-color: rgb(249, 249, 253);
+  
+  
+}
+
+.header-landing,
+.header-h1 {
+  font-family: serif;
+  font-size: 60px;
+}
+
+.header-h1 {
+  margin-top: 30px;
+}
+
+p.lead {
+  font-size: 18px;
+}
+
+div.info-cont {
+  /* height: 50px; */
+  margin: 100px auto;
+  width: 80%;
+}
+
+.sidebar-a:link,
+.sidebar-a:visited {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  background: #999;
+}
+
+ul.dashbord-list-item li a:hover {
+  color: tomato;
+}
+
+.admin-image {
+  height: 60px !important;
+  margin-top: 20px;
+}
+
+.admin-image:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.login,
+.landing,
+.forgot-password,
+.reset-password,
+.loading {
+  min-height: 82.75vh !important;
+}
+
+.landing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("bbgg.jpg"); 
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://thumbs.dreamstime.com/z/art-museum-anstract-painting-visitors-background-round-illustration-people-abstract-114884738.jpg"); */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.loading {
+  position: relative;
+  top: 120px;
+}
+
+.register-admin {
+  min-height: 80vh;
+  margin-top: 50px;
+}
+
+.header-landing {
+  color: white;
+  padding-top: 70px;
+}
+
+.lead-landing {
+  color: white;
+  font-size: 18px;
+}
+
+.btn-landing {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  div.sidebar {
+    display: none !important;
+  }
+  ul.sidebar-header-ul {
+    display: block;
+  }
+  #root {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .wrapper {
+    margin-bottom: 100px;
+  }
+
+  .chart {
+    margin-top: 100px;
+  }
+
+  .header-landing {
+    font-size: 60px;
+    margin-top: 60px;
+  }
+
+  .header-h1 {
+    font-size: 60px;
+    margin-top: 40px;
+  }
+  .lead-landing,
+  p.lead {
+    font-size: 17px;
+  }
+
+  .active {
+    background: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  div.sidebar {
+    margin: 0;
+    padding: 0;
+    background: #080808 !important;
+    min-height: 90vh;
+  }
+
+  ul.dashbord-list-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.dashbord-list-item li {
+    border-bottom: 0.2px solid #999;
+    padding: 0;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  ul.dashbord-list-item li:first-child {
+    border-top: 0.2px solid #999;
+  }
+
+  p.admin-text {
+    color: tomato;
+    opacity: 0.8;
+  }
+
+  ul.sidebar-header-ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  table {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #pagination {
+    margin: 30px auto;
+    width: 50%;
+  }
+
+  form {
+    margin: 0 30px;
+  }
+
+  .no-result-found {
+    max-width: 300px;
+    margin: 20px auto;
+  }
+
+  .header-landing {
+    font-size: 45px;
+    margin-top: 50px;
+  }
+
+  .header-h1 {
+    font-size: 45px;
+    margin-top: 35px;
+  }
+  .lead-landing,
+  p.lead {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .small {
+    width: 50%;
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .header-landing {
+    font-size: 40px;
+    margin-top: 45px;
+  }
+
+  .header-h1 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  .lead-landing,
+  p.lead {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header-landing {
+    font-size: 33px;
+    margin-top: 35px;
+  }
+
+  .header-h1 {
+    font-size: 33px;
+    margin-top: 25px;
+  }
+  .lead-landing,
+  p.lead {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #vms-logo {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-landing {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .header-h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .lead-landing,
+  p.lead {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .header-landing {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .header-h1 {
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 302px) {
+  #vms-logo {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .header-landing,
+  h1.header-h1 {
+    font-size: 18px;
+  }
+}
+.Typewriter__wrapper {
+  font-size: 2.2em !important;
+  color: #E15B28 !important;
+  font-weight: 600 !important;
+}
+.Typewriter__cursor {
+  font-size: 2.4em !important;
+  color: #E15B28 !important;
+}
