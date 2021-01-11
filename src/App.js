@@ -25,6 +25,7 @@ import TrackedVisitor from "./components/Admin/TrackedVisitor";
 import TrackVisitors from "./components/Admin/TrackVisitors";
 import TrackedVisitors from "./components/Admin/TrackedVisitors";
 import ResetPassword from "./components/Admin/ResetPassword";
+import ThankYou from "./components/Layout/ThankYou";
 
 const jwtToken = localStorage.jwtToken;
 
@@ -53,6 +54,7 @@ function App() {
       <Route exact path="/" component={Landing} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/RegisterVisitor" component={RegisterVisitor} />
+      <Route exact path="/SignoutVisitor" component={SignoutVisitor} />
       <Route exact path="/register-admin" component={RegisterAdmin} />
       <Route exact path="/forgot-password" component={ForgotPassword} />
       <Route path="/reset" component={ResetPassword} />
@@ -68,6 +70,7 @@ function App() {
           component={MyRegisteredVisitors}
         />
         <SecuredRoute exact path="/visitors-log" component={MyVisitorsLogs} />
+        <SecuredRoute exact path="/ThankYou" component={ThankYou} />
         <SecuredRoute
           exact
           path="/signout-visitor"

@@ -22,20 +22,24 @@ class Landing extends Component {
         </p>
         
         <hr />
-        
+
+
         <Link
           to="/RegisterVisitor"
-          className="btn btn-outline-info btn-lg  mr-2 btn-landing"
-        >
-          Login
-        </Link>
-
-        {/* <Link
-          to="/register-admin"
           className="btn btn-lg btn-outline-success mr-2 btn-landing"
         >
-          Register
-        </Link> */}
+          LogIn
+        </Link> 
+
+        
+        <Link
+          to="/SignoutVisitor"
+          className="btn btn-outline-info btn-lg  mr-2 btn-landing"
+        >
+          LogOut
+        </Link>
+
+       
       </div>
     );
     if (isValidToken && adminCredentials) {
