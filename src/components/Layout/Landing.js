@@ -39,6 +39,13 @@ class Landing extends Component {
           LogOut
         </Link>
 
+        <Link
+          to="/qr"
+          className="btn btn-lg btn-outline-success mr-2 btn-landing"
+        >
+          QR Scan
+        </Link> 
+
        
       </div>
     );
