@@ -5,6 +5,23 @@ import Sidebar from "../Layout/Sidebar";
 import { fetchVisitorsLog } from "../../actions/adminActions";
 import Pagination from "./Pagination";
 import VisitorLogsDetails from "./VisitorLogsDetails";
+import ReactDOM from "react-dom";
+import Pdf from "react-to-pdf";
+
+
+const ref = React.createRef();
+
+function App() {
+  return (
+    <div className="App">
+     
+   
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 
 class MyVisitorsLogs extends Component {
   state = {
@@ -74,7 +91,7 @@ class MyVisitorsLogs extends Component {
         <div className="col-md-2 sidebar">
           <Sidebar />
         </div>
-        <div className="col-md-8 mx-auto mt-3">
+        <div className="col-md-8 mx-auto mt-3" ref={ref}>
           <h2 className="my-3 text-center">Visitors' Log</h2>
           <VisitorLogsDetails posts={currentPosts} loading={loading} />
           <Pagination
@@ -84,6 +101,10 @@ class MyVisitorsLogs extends Component {
             nextPage={nextPage}
             prevPage={prevPage}
           />
+       <Pdf targetRef={ref} filename="VisitorsLog.pdf">
+        {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
+      </Pdf>
+
         </div>
       </div>
     );
