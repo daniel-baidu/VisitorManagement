@@ -3,13 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "@syncfusion/ej2-base": "^18.4.34",
-    "@syncfusion/ej2-buttons": "^18.4.33",
-=======
     "@syncfusion/ej2-buttons": "^18.4.33",
     "@syncfusion/ej2-react-base": "^18.4.34",
->>>>>>> 6ffec8256bf809ef82cc8f6cbfff95a877a191dc
     "@syncfusion/ej2-react-dropdowns": "^18.4.34",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
