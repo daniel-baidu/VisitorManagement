@@ -207,7 +207,7 @@ class RegisterVisitor extends Component {
                 </div>
               </div>
 
-              <div className="form-group">
+              {/* <div className="form-group">
                 <label htmlFor="assets">Assets</label>
                 <textarea
                   className="form-control form-control-lg"
@@ -217,7 +217,7 @@ class RegisterVisitor extends Component {
                   value={assets}
                   onChange={this.handleOnChange}
                 ></textarea>
-              </div>
+              </div> */}
 
               <button type="submit" className="btn btn-primary d-block my-4">
                 Enter Details
