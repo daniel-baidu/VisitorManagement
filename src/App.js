@@ -28,7 +28,10 @@ import ResetPassword from "./components/Admin/ResetPassword";
 import ThankYou from "./components/Layout/ThankYou";
 import qr from "./components/Layout/qr";
 import Templates from './components/Layout/EmployeSel';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ffec8256bf809ef82cc8f6cbfff95a877a191dc
 
 const jwtToken = localStorage.jwtToken;
 
@@ -64,7 +67,10 @@ function App() {
       <Route exact path="/forgot-password" component={ForgotPassword} />
       <Route path="/reset" component={ResetPassword} />
       
+<<<<<<< HEAD
      
+=======
+>>>>>>> 6ffec8256bf809ef82cc8f6cbfff95a877a191dc
 
       {
         // private Routes

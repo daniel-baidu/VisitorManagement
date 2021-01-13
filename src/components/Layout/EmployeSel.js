@@ -5,11 +5,14 @@ import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
 import { SampleBase } from "./sample-base";
 import * as data from "./dataSource.json";
 
+<<<<<<< HEAD
 import "./material2.css"; 
 import "./material1.css"; 
 import "./material3.css"; 
 
 
+=======
+>>>>>>> 6ffec8256bf809ef82cc8f6cbfff95a877a191dc
  export default class Templates extends SampleBase {
     constructor() {
         super(...arguments);
@@ -19,6 +22,7 @@ import "./material3.css";
         // maps the appropriate column to fields property
         this.fields = { text: 'Name', value: 'Eimg' };
     }
+<<<<<<< HEAD
 //set the value to header template
 headerTemplate(data) {
   return (<div className="header"> <span>Photo</span> <span className="columnHeader">Employee Info</span></div>);
@@ -28,6 +32,22 @@ itemTemplate(data) {
   return (<div><img className="empImage" src={"src/combo-box/Employees/" + data.Eimg + ".png"} alt="employee"/>
   <div className="ename"> {data.Name} </div><div className="job"> {data.Designation} </div></div>);
 }
+=======
+    //set the value to header template
+    headerTemplate(data) {
+        return (<div className="header"> <span>Photo</span> <span className="columnHeader">Employee Info</span></div>);
+    }
+    //set the value to item template
+    itemTemplate(data) {
+        return (<div><img className="empImage" src={"src/drop-down-list/Employees/" + data['Eimg'] + ".png"} alt="employee"/>
+        <div className="ename"> {data.Name} </div><div className="job"> {data.Designation} </div></div>);
+    }
+    //set the value to value template
+    valueTemplate(data) {
+        return (<div className="valueTemplate"><img className="value" src={"src/drop-down-list/Employees/" + data.Eimg + ".png"} height="28px" width="28px" alt="employee"/>
+          <div className="name"> {data.Name} </div></div>);
+    }
+>>>>>>> 6ffec8256bf809ef82cc8f6cbfff95a877a191dc
     render() {
         return (<div className='control-pane'>
         <div className='control-section'>
