@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 import { registerVisitor } from "../../actions/adminActions";
 import Sidebar from "../Layout/Sidebar";
+//import Templates from "../Layout/EmployeSel";
 
 class RegisterVisitor extends Component {
   constructor() {
@@ -172,6 +173,7 @@ class RegisterVisitor extends Component {
               </div> 
               <div className="form-row">
                 <div className="form-group col-md-6">
+                  
                   <label htmlFor="whomToSee">Whom To See</label>
                   <input
                     type="text"
@@ -207,7 +209,7 @@ class RegisterVisitor extends Component {
                 </div>
               </div>
 
-              <div className="form-group">
+              {/* <div className="form-group">
                 <label htmlFor="assets">Assets</label>
                 <textarea
                   className="form-control form-control-lg"
@@ -217,7 +219,7 @@ class RegisterVisitor extends Component {
                   value={assets}
                   onChange={this.handleOnChange}
                 ></textarea>
-              </div>
+              </div> */}
 
               <button type="submit" className="btn btn-primary d-block my-4">
                 Enter Details

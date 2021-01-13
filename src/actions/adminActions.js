@@ -65,7 +65,7 @@ export const registerVisitor = (visitorDetails, history) => async (
 ) => {
   try {
     await axios.post(`/api/v1/visitors/register-visitor`, visitorDetails);
-    window.open("/ThankYou");
+    window.open("/EmployeSel");  //change
     history.push("/RegisterVisitor");
   } catch (err) {
     console.log(err.response);
