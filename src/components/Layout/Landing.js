@@ -63,7 +63,7 @@ class Landing extends Component {
       );
     }
     return (
-      <div className="landing ">
+      <a id="GFG" href="/VisitorType"><div className="landing ">
         <div className="light-overlay landing-inner text-dark">
           <div className="container">
             <div className="row">
@@ -71,7 +71,7 @@ class Landing extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </div></a>
     );
     
   }
