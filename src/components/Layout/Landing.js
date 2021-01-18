@@ -24,27 +24,27 @@ class Landing extends Component {
         <hr />
 
 
-        <Link
-          to="/RegisterVisitor"
+         <Link
+          to="/VisitorType"
           className="btn btn-lg btn-outline-success mr-2 btn-landing"
         >
           LogIn
         </Link> 
 
         
-        <Link
+         <Link
           to="/SignoutVisitor"
           className="btn btn-outline-info btn-lg  mr-2 btn-landing"
         >
           LogOut
-        </Link>
+        </Link> 
 
         <Link
           to="/qr"
           className="btn btn-lg btn-outline-success mr-2 btn-landing"
         >
           QR Scan
-        </Link> 
+        </Link>  
 
        
       </div>

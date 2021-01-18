@@ -40,12 +40,12 @@ class SignoutVisitor extends Component {
 
     return (
       <div>
-        <div className="row">
+        <div className="row1">
           {/* <div className="col-md-2 d-none d-sm-block d-xs-block sidebar">
             <Sidebar />
           </div> */}
           <div className="col-md-6 mx-auto mt-5">
-            <h1 className="header-h1 text-center my-4">Enter Visitor's Tag</h1>
+            <h1 className="header-h1 text-center my-4">Enter Your Tag</h1>
             <form onSubmit={this.handleOnSubmit}>
               <div className="form-group">
                 <input

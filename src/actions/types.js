@@ -7,5 +7,7 @@ export const GET_VISITORS = "GET_VISITORS";
 export const GET_VISITORS_LOGS = "GET_VISITORS_LOGS";
 export const TRACK_VISITOR = "TRACK_VISITOR";
 export const TRACK_VISITORS = "TRACK_VISITORS";
-export const selectWhom = "selectWhom"
+export const VISITOR_TYPE = "VISITOR_TYPE";
+
+
 // Security Actions

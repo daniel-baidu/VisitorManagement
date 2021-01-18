@@ -28,6 +28,7 @@ import ResetPassword from "./components/Admin/ResetPassword";
 import ThankYou from "./components/Layout/ThankYou";
 import qr from "./components/Layout/qr";
 import Templates from './components/Layout/EmployeSel';
+import VisitorType from './components/Admin/VisitorType';
 
 const jwtToken = localStorage.jwtToken;
 
@@ -45,6 +46,13 @@ if (jwtToken) {
     window.location.href = "/";
   }
 }
+
+
+
+
+
+
+
 function App() {
   return (
     <Router>
@@ -62,6 +70,7 @@ function App() {
       <Route exact path="/register-admin" component={RegisterAdmin} />
       <Route exact path="/forgot-password" component={ForgotPassword} />
       <Route path="/reset" component={ResetPassword} />
+      <Route exact path="/VisitorType" component={VisitorType} />
       
      
 
@@ -77,6 +86,7 @@ function App() {
         />
         <SecuredRoute exact path="/visitors-log" component={MyVisitorsLogs} />
         <SecuredRoute exact path="/ThankYou" component={ThankYou} />
+        
        
         <SecuredRoute
           exact

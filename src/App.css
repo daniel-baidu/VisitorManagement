@@ -301,6 +301,15 @@ ul.dashbord-list-item li a:hover {
   font-size: 2.4em !important;
   color: #E15B28 !important;
 }
+.row1{display:-ms-flexbox;
+  display:flex;-ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  margin-bottom: 170px;
+  margin-top: 40px;
+}
 
+.btn-landing11 {
+  margin-top: 140px;
+  margin-right: 600px;
 
-
+}

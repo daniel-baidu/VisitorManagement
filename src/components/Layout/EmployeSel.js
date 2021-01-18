@@ -7,6 +7,9 @@ import * as data from "./dataSource.json";
 import "./material2.css"; 
 import "./material1.css"; 
 import "./material3.css"; 
+import { Link } from "react-router-dom";
+
+
 
 
  export default class Templates extends SampleBase {
@@ -32,11 +35,28 @@ itemTemplate(data) {
         <div className='control-section'>
           <div id='template'>
             <DropDownListComponent id="employees" dataSource={this.employeesData} fields={this.fields} placeholder="Select an employee" itemTemplate={this.itemTemplate} valueTemplate={this.valueTemplate} headerTemplate={this.headerTemplate} popupHeight="270px"/>
+         
+  
+         
+        <Link
+          to="/ThankYou"
+          className="btn btn-outline-info btn-lg  mr-2 btn-landing"
+        >
+          Take Picture
+        </Link> 
+
+
+
           </div>
+        
         </div>
         
       </div>);
+
+      
     }
+    
 }
+
 
 

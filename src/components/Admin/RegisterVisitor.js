@@ -72,7 +72,7 @@ class RegisterVisitor extends Component {
       sex,
       whomToSee,
       purpose,
-      assets,
+    
       isLoading,
       errors,
     } = this.state;

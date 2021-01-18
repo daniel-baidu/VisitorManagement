@@ -7,6 +7,7 @@ import {
   GET_VISITORS_LOGS,
   TRACK_VISITOR,
   TRACK_VISITORS,
+  VISITOR_TYPE,
 } from "./types";
 import { setJwtToken } from "../securityUtils/SetJwtToken";
 
@@ -75,6 +76,27 @@ export const registerVisitor = (visitorDetails, history) => async (
     });
   }
 };
+
+
+export const registerType = (typeDetails, history) => async (
+  dispatch
+) => {
+  try {
+    // await axios.post(`/api/v1/visitors/VisitorType`, typeDetails);
+    window.open("RegisterVisitor");  //change
+    history.push("/VisitorType");
+  } catch (err) {
+    console.log(err.response);
+    dispatch({
+      type: GET_ERRORS,
+      payload: err.response.data,
+    });
+  }
+};
+
+
+
+
 
 export const fetchVisitors = () => async (dispatch) => {
   try {

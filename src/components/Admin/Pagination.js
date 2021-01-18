@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 export default class Pagination extends Component {
   render() {
     const {
@@ -19,7 +20,7 @@ export default class Pagination extends Component {
       <nav id="pagination">
         <ul className="pagination">
           <li className="page-item">
-            <a onClick={() => prevPage()} className="page-link" href="/#">
+            <a onClick={() => prevPage()} className="page-link" href="#">
               Previous
             </a>
           </li>
@@ -27,7 +28,7 @@ export default class Pagination extends Component {
             <li key={pageNum} className="page-item">
               <a
                 onClick={() => paginate(pageNum)}
-                href="/#"
+                href="#"
                 className="page-link"
               >
                 {pageNum}
@@ -35,7 +36,7 @@ export default class Pagination extends Component {
             </li>
           ))}
           <li className="page-item">
-            <a onClick={() => nextPage()} className="page-link" href="/#">
+            <a onClick={() => nextPage()} className="page-link" href="#">
               Next
             </a>
           </li>

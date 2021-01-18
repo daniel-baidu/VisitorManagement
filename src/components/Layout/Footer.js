@@ -6,7 +6,7 @@ class Footer extends Component {
       <footer className="bg-info text-center text-white">
         <div className="container">
           <p className="my-2">
-            Powered by  Stylo Baidu &copy; 2020
+            Powered by  Stylo Baidu &copy; 2021
           </p>
      
         </div>
