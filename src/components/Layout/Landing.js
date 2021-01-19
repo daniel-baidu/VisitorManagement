@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Type from "./Type";
+import qrpic from "./qrpic.png"
 
 class Landing extends Component {
   render() {
@@ -39,13 +40,19 @@ class Landing extends Component {
           LogOut
         </Link> 
 
-        <Link
+        {/* <Link
           to="/qr"
           className="btn btn-lg btn-outline-success mr-2 btn-landing"
         >
           QR Scan
+        </Link>   */}
+        <Link
+          to="/qr"
+          
+        >
+           <img src={qrpic} alt=""  className = "qrpic"/>
         </Link>  
-
+       
        
       </div>
     );

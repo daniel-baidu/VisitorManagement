@@ -18,7 +18,7 @@ class Test extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="qrstyle">
         <QrReader
           delay={300}
           onError={this.handleError}
